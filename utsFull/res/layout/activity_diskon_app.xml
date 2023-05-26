@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/btnBalik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-15dp"
+            android:text="«"
+            android:textSize="30sp"
+            android:textColor="#000"
+            android:background="@android:color/transparent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Harga Barang"
+            android:textColor="#000"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:paddingHorizontal="30dp"
+        android:columnCount="2"
+        android:rowCount="2">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Harga Awal"
+                android:layout_marginTop="15dp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Diskon (%)"
+                android:layout_marginTop="40dp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Harga Akhir "
+                android:layout_marginTop="35dp"
+                android:textColor="#000"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="50dp">
+
+
+            <EditText
+                android:id="@+id/inputHarga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textAlignment="center"
+                android:ems="10"
+                android:text="" />
+
+            <EditText
+                android:id="@+id/inputDiskon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:textAlignment="center"
+                android:text=""
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/hargaAkhir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="35dp"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                android:text=""
+                android:textAlignment="center" />
+        </LinearLayout>
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/keterangan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginTop="10dp"
+        android:textSize="10dp"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/btnHitung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hitung"
+        android:layout_marginTop="10dp"/>
+
+
+</LinearLayout>
