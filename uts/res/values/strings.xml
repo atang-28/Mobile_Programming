@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">UTS_21103079</string>
+    <string-array name="suhu1">
+        <item>C</item>
+        <item>F</item>
+        <item>K</item>
+    </string-array>
+
+    <string-array name="suhu2">
+        <item>K</item>
+        <item>F</item>
+        <item>C</item>
+    </string-array>
+</resources>
